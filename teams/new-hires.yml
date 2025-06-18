@@ -10,17 +10,13 @@
 name: New Hires
 policies:
   - path: ../lib/macos/policies/macos-device-health.policies.yml
-  - path:
-  - path:
 queries:
   - path: ../lib/all/queries/collect-usb-devices.queries.yml
-  - path:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
-    - path:
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
