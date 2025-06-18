@@ -10,6 +10,7 @@
 name: New Hires
 policies:
   - path: ../lib/macos/policies/macos-device-health.policies.yml
+  - path: ../lib/macos/policies/dns-resolvers.policies.yml
 queries:
   - path: ../lib/all/queries/collect-usb-devices.queries.yml
 agent_options:
@@ -20,6 +21,7 @@ controls:
       - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
+    - path: ../lib/macos/scripts/set-dns-cloudflare.sh
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
