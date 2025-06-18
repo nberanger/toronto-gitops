@@ -16,6 +16,9 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  macos_updates:
+    deadline: "2025-07-12"
+    minimum_version: "15.4.1"
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
 team_settings:
